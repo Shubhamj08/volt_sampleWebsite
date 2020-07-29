@@ -4,11 +4,6 @@
   line-height: 1;
 }
 
-.jumbotron {
-  background-image: url(products/forest-931706_1280.jpg);
-  background-size: cover;
-}
-
 .navbar {
   background: transparent;
   font-family: "Montserrat", sans-serif;
@@ -52,10 +47,11 @@ footer.blockquote-footer {
   font-size: 16px !important;
 }
 
-div h2.display-2 {
+.bottom-name {
   font-family: "Montserrat", sans-serif;
   position: absolute;
   bottom: 5px;
+  left: 15px;
   letter-spacing: 15px;
 }
 
@@ -111,7 +107,7 @@ div h2.display-2 {
 }
 
 .prod-image:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .contact-text {
@@ -143,6 +139,67 @@ div h2.display-2 {
 
 .prod-2 {
   position: absolute;
-  top: 43px;
+  top: 50px;
   right: -75px;
+}
+
+.btn-image {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+  border-radius: 0% !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+}
+
+.btn-image:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.19), 0 12px 12px rgba(0, 0, 0, 0.23);
+}
+
+.btn-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+.btn-heading {
+  position: relative;
+  right: -400px;
+  top: -58px;
+  border-radius: 0% !important;
+}
+
+.btn-heading-even {
+  position: relative;
+  right: 400px;
+  top: -58px;
+}
+
+div.carousel-inner {
+  height: 780px !important;
+}
+
+.footer-head {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #ffffff !important;
+}
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #ffffff !important;
+}
+
+.icon {
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+
+.footer-bg {
+  background-image: url("products/footer-bg.jpeg");
+  background-size: cover;
 }
