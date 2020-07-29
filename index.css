@@ -133,3 +133,16 @@ div h2.display-2 {
   font-weight: 400 !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
 }
+
+.prod-1,
+.prod-3 {
+  position: absolute;
+  top: 50px;
+  right: 75px;
+}
+
+.prod-2 {
+  position: absolute;
+  top: 50px;
+  right: -75px;
+}
