@@ -13,7 +13,8 @@
 
 #logo {
   position: fixed;
-  transform: translateY(5%) translateX(5%);
+  left: 2%;
+  top: 1%;
 }
 
 .nav-link {
@@ -56,15 +57,16 @@ footer.blockquote-footer {
 .bottom-name {
   font-family: "Montserrat", sans-serif;
   position: absolute;
-  transform: translateY(-120%) translateX(10%);
+  left: 2%;
+  bottom: 3%;
   letter-spacing: 15px;
 }
 
 .about {
   display: inline-block;
   position: absolute;
-  top: -100px;
-  right: 380px;
+  top: -30%;
+  right: 33%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   margin-top: 35px;
@@ -139,18 +141,19 @@ footer.blockquote-footer {
 .prod-3 {
   position: absolute;
   top: 50px;
-  right: 75px;
+  right: 5%;
 }
 
 .prod-2 {
   position: absolute;
   top: 50px;
-  right: -75px;
+  right: -5%;
 }
 
 .btn-image {
   position: absolute;
-  transform: translateX(-120%) translateY(1250%);
+  right: 2%;
+  bottom: 15%;
   border-radius: 0% !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
 }
@@ -166,14 +169,14 @@ footer.blockquote-footer {
 
 .btn-heading {
   position: relative;
-  right: -400px;
+  right: -50%;
   top: -58px;
   border-radius: 0% !important;
 }
 
 .btn-heading-even {
   position: relative;
-  right: 400px;
+  right: 50%;
   top: -58px;
 }
 
