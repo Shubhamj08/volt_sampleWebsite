@@ -37,30 +37,44 @@
   </head>
 
   <body>
-    <div class="jumbotron p-0 position-relative" style="height: 780px;">
+    <div class="jumbotron p-0 position-relative" style="height: 100%;">
       <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
           <a class="navbar-brand" id="logo" href="#" style="display: block;"
             >VOLT</a
           >
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown mr-3">
-              <a class="nav-link" href="#all-products">Products</a>
-              <div class="dropdown-content bg-dark">
-                <a href="#prod-1">Product 1</a>
-                <a href="#prod-2">Product 2</a>
-                <a href="#prod-3">Product 3</a>
-              </div>
-            </li>
-            <li class="nav-item mr-3">
-              <a href="#about-us" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <li class="nav-item mr-3">
+                <a class="nav-link text-light" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown mr-3">
+                <a class="nav-link text-light" href="#all-products">Products</a>
+                <div class="dropdown-content bg-dark">
+                  <a href="#prod-1">Product 1</a>
+                  <a href="#prod-2">Product 2</a>
+                  <a href="#prod-3">Product 3</a>
+                </div>
+              </li>
+              <li class="nav-item mr-3">
+                <a href="#about-us" class="nav-link text-light">About Us</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-light" href="#contact">Contact</a>
+              </li>
+            </div>
           </ul>
         </nav>
         <div
@@ -85,7 +99,7 @@
             <div class="carousel-item active position-relative">
               <img
                 src="products/forest-931706_1280.jpg"
-                style="width: 100%; height: 780px;"
+                style="width: 100%; height: auto;"
                 alt="Product 1"
               />
               <a href=""
@@ -100,7 +114,7 @@
             <div class="carousel-item position-relative">
               <img
                 src="products/oil-front.jpg"
-                style="width: 100%; height: 780px;"
+                style="width: 100%; height: auto;"
                 alt="Product 2"
               />
               <a href=""
@@ -115,7 +129,7 @@
             <div class="carousel-item position-relative">
               <img
                 src="products/pre-workout.jpg"
-                style="width: 100%; height: 780px;"
+                style="width: 100%; height: auto;"
                 alt="Product 3"
               />
               <a href=""

@@ -10,6 +10,12 @@
   font-weight: 700;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
+#logo {
+  position: fixed;
+  transform: translateY(5%) translateX(5%);
+}
+
 .nav-link {
   font-size: 18px !important;
   color: #ffffff;
@@ -50,8 +56,7 @@ footer.blockquote-footer {
 .bottom-name {
   font-family: "Montserrat", sans-serif;
   position: absolute;
-  bottom: 5px;
-  left: 15px;
+  transform: translateY(-120%) translateX(10%);
   letter-spacing: 15px;
 }
 
@@ -145,8 +150,7 @@ footer.blockquote-footer {
 
 .btn-image {
   position: absolute;
-  right: 40px;
-  bottom: 50px;
+  transform: translateX(-120%) translateY(1250%);
   border-radius: 0% !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
 }
@@ -202,4 +206,8 @@ div.carousel-inner {
 .footer-bg {
   background-image: url("products/footer-bg.jpeg");
   background-size: cover;
+}
+
+/* Mobile Portrait to Mobile Landscape Size(devices and browsers) */
+@media only screen and (max-width: 479px) {
 }
