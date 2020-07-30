@@ -43,22 +43,11 @@ h6 {
   font-family: "Dosis", sans-serif !important;
 }
 
-q {
-  font-size: 18px !important;
-  letter-spacing: 3px;
-}
-
-footer.blockquote-footer {
-  letter-spacing: 1px;
-  font-family: "Dosis", sans-serif !important;
-  font-size: 16px !important;
-}
-
 .bottom-name {
   font-family: "Montserrat", sans-serif;
   position: absolute;
-  left: 2%;
-  bottom: 3%;
+  left: 3%;
+  bottom: 5%;
   letter-spacing: 15px;
 }
 
@@ -140,20 +129,27 @@ footer.blockquote-footer {
 .prod-1,
 .prod-3 {
   position: absolute;
-  top: 50px;
   right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .prod-2 {
   position: absolute;
-  top: 50px;
   right: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
 }
 
 .btn-image {
   position: absolute;
-  right: 2%;
-  bottom: 15%;
+  right: 3%;
+  bottom: 5%;
   border-radius: 0% !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
 }
@@ -168,16 +164,15 @@ footer.blockquote-footer {
 }
 
 .btn-heading {
-  position: relative;
-  right: -50%;
-  top: -58px;
-  border-radius: 0% !important;
+  position: absolute;
+  right: 5%;
+  top: -8%;
 }
 
 .btn-heading-even {
-  position: relative;
-  right: 50%;
-  top: -58px;
+  position: absolute;
+  left: 5%;
+  top: -8%;
 }
 
 div.carousel-inner {

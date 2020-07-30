@@ -3,7 +3,7 @@
   <head>
     <!-- meta tags here -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Title -->
     <title>Homepage</title>
@@ -37,115 +37,115 @@
   </head>
 
   <body>
-    <div class="jumbotron p-0 position-relative">
-      <div class="container-fluid p-0">
-        <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
-          <a class="navbar-brand" id="logo" href="#" style="display: block;"
-            >VOLT</a
-          >
-          <ul class="navbar-nav ml-auto">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarContent"
-              aria-controls="navbarContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarContent">
-              <li class="nav-item mr-3">
-                <a class="nav-link text-light" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown mr-3">
-                <a class="nav-link text-light" href="#all-products">Products</a>
-                <div class="dropdown-content bg-dark">
-                  <a href="#prod-1">Product 1</a>
-                  <a href="#prod-2">Product 2</a>
-                  <a href="#prod-3">Product 3</a>
-                </div>
-              </li>
-              <li class="nav-item mr-3">
-                <a href="#about-us" class="nav-link text-light">About Us</a>
-              </li>
-              <li class="nav-item mr-3">
-                <a class="nav-link text-light" href="#contact">Contact</a>
-              </li>
-            </div>
-          </ul>
-        </nav>
-        <div
-          id="top-carousel"
-          class="carousel slide"
-          data-ride="carousel"
-          data-interval="3000"
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+      <a class="navbar-brand" id="logo" href="#" style="display: block;"
+        >VOLT</a
+      >
+      <ul class="navbar-nav ml-auto">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <!-- Indicators -->
-          <ul class="carousel-indicators">
-            <li
-              data-target="#top-carousel"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#top-carousel" data-slide-to="1"></li>
-            <li data-target="#top-carousel" data-slide-to="2"></li>
-          </ul>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- The slideshow -->
-          <div class="carousel-inner">
-            <div class="carousel-item active position-relative">
-              <img
-                src="products/forest-931706_1280.jpg"
-                style="width: 100%; height: inherit;"
-                alt="Product 1"
-              />
-              <a href=""
-                ><button
-                  type="button"
-                  class="btn btn-warning px-3 py-2 btn-image"
-                >
-                  <span class="btn-text">Shop Now</span>
-                </button></a
-              >
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <li class="nav-item mr-3">
+            <a class="nav-link text-light" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown mr-3">
+            <a class="nav-link text-light" href="#all-products">Products</a>
+            <div class="dropdown-content bg-dark">
+              <a href="#prod-1">Product 1</a>
+              <a href="#prod-2">Product 2</a>
+              <a href="#prod-3">Product 3</a>
             </div>
-            <div class="carousel-item position-relative">
-              <img
-                src="products/oil-front.jpg"
-                style="width: 100%; height: inherit;"
-                alt="Product 2"
-              />
-              <a href=""
-                ><button
-                  type="button"
-                  class="btn btn-warning px-3 py-2 btn-image"
-                >
-                  <span class="btn-text">Shop Now</span>
-                </button></a
-              >
-            </div>
-            <div class="carousel-item position-relative">
-              <img
-                src="products/pre-workout.jpg"
-                style="width: 100%; height: inherit;"
-                alt="Product 3"
-              />
-              <a href=""
-                ><button
-                  type="button"
-                  class="btn btn-warning px-3 py-2 btn-image"
-                >
-                  <span class="btn-text">Shop Now</span>
-                </button></a
-              >
-            </div>
-          </div>
+          </li>
+          <li class="nav-item mr-3">
+            <a href="#about-us" class="nav-link text-light">About Us</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link text-light" href="#contact">Contact</a>
+          </li>
         </div>
-        <h2 class="display-2 text-light bottom-name">VOLT</h2>
+      </ul>
+    </nav>
+
+    <div
+      id="top-carousel"
+      class="carousel position-relative"
+      data-ride="carousel"
+      data-interval="3000"
+    >
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#top-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#top-carousel" data-slide-to="1"></li>
+        <li data-target="#top-carousel" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+          <img
+            src="products/forest-931706_1280.jpg"
+            class="img-fluid"
+            style="
+              min-height: 100vh !important;
+              max-height: 100vh !important;
+              min-width: 100vw;
+            "
+            alt="Product 1"
+          />
+          <a href=""
+            ><button type="button" class="btn btn-warning px-3 py-2 btn-image">
+              <span class="btn-text">Shop Now</span>
+            </button></a
+          >
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="products/oil-front.jpg"
+            class="img-fluid"
+            alt="Product 2"
+            style="
+              min-height: 100vh !important;
+              max-height: 100vh !important;
+              min-width: 100vw;
+            "
+          />
+          <a href=""
+            ><button type="button" class="btn btn-warning px-3 py-2 btn-image">
+              <span class="btn-text">Shop Now</span>
+            </button></a
+          >
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="products/pre-workout.jpg"
+            class="img-fluid"
+            style="
+              min-height: 100vh !important;
+              max-height: 100vh !important;
+              min-width: 100vw;
+            "
+            alt="Product 3"
+          />
+          <a href=""
+            ><button type="button" class="btn btn-warning px-3 py-2 btn-image">
+              <span class="btn-text">Shop Now</span>
+            </button></a
+          >
+        </div>
       </div>
+      <div class="display-2 text-light bottom-name">VOLT</div>
     </div>
+    <!-- <h2 class="display-2 text-light bottom-name">VOLT</h2> -->
 
     <div id="about-us"></div>
     <div
@@ -189,176 +189,67 @@
           <div class="col-6">
             <img
               src="products/oil-front.jpg"
-              class="mr-1 prod-image"
-              style="width: 100%; height: 300px;"
+              class="mr-1 prod-image img-fluid"
             />
           </div>
           <div class="col-6">
-            <img
-              src="products/oil-front.jpg"
-              class="prod-image"
-              style="width: 100%; height: 300px;"
-            />
+            <img src="products/oil-front.jpg" class="prod-image img-fluid" />
           </div>
         </div>
         <div class="form-row my-2">
           <div class="col-4">
             <img
               src="products/oil-front.jpg"
-              class="mr-1 prod-image"
-              style="width: 100%; height: auto;"
+              class="mr-1 prod-image img-fluid"
             />
           </div>
           <div class="col-4">
             <img
               src="products/oil-front.jpg"
-              class="mr-1 prod-image"
-              style="width: 100%; height: auto;"
+              class="mr-1 prod-image img-fluid"
             />
           </div>
           <div class="col-4">
-            <img
-              src="products/oil-front.jpg"
-              class="prod-image"
-              style="width: 100%; height: auto;"
-            />
+            <img src="products/oil-front.jpg" class="prod-image img-fluid" />
           </div>
         </div>
         <div class="form-row my-2">
           <div class="col-6">
             <img
               src="products/oil-front.jpg"
-              class="mr-1 prod-image"
-              style="width: 100%; height: 300px;"
+              class="mr-1 prod-image img-fluid"
             />
           </div>
           <div class="col-6">
-            <img
-              src="products/oil-front.jpg"
-              class="prod-image"
-              style="width: 100%; height: 300px;"
-            />
+            <img src="products/oil-front.jpg" class="prod-image img-fluid" />
           </div>
         </div>
       </div>
 
       <div id="prod-1"></div>
-      <div class="text-center mb-5" style="margin-top: 150px !important;">
-        <div class="form-row my-5" style="position: relative;">
-          <div class="col-5">
-            <img
-              src="products/oil-front.jpg"
-              class="mr-1"
-              style="width: 100%; height: 350px;"
-            />
-          </div>
-          <div class="col-7 prod-1">
-            <h6
-              class="text-dark p-3 text-justify"
-              style="background: rgba(223, 105, 177, 0.7);"
-            >
-              <span class="display-4" style="color: black;"
-                >Hair Oil<a class="btn-heading" href=""
-                  ><button
-                    type="button"
-                    class="btn btn-warning px-2 py-1"
-                    style="border-radius: 0% !important;"
-                  >
-                    <span class="btn-text">Shop Now</span>
-                  </button></a
-                ></span
-              ><br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              dolor consectetur? Animi et molestiae eius iste rem reiciendis
-              consequuntur aspernatur voluptate exercitationem, temporibus harum
-              obcaecati maiores perspiciatis totam quo officia.Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Nam, dolor consectetur?
-              Animi et molestiae eius iste rem reiciendis consequuntur
-              aspernatur voluptate exercitationem, temporibus harum obcaecati
-              maiores perspiciatis totam quo officia.Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Nam, dolor consectetur? Animi et
-              molestiae eius iste rem reiciendis consequuntur aspernatur
-              voluptate exercitationem, temporibus harum obcaecati maiores
-              perspiciatis totam quo officia.
-            </h6>
-          </div>
-        </div>
-      </div>
-
-      <div id="prod-2"></div>
       <div
-        class="form-row my-5 position-relative"
-        style="margin-top: 150px !important;"
-      >
-        <div class="col-7 prod-2" style="z-index: 1;">
-          <div
-            class="text-dark p-3 text-right"
-            style="background: rgba(120, 230, 250, 0.7);"
-          >
-            <span class="display-4" style="color: black;"
-              ><a class="btn-heading-even" href=""
-                ><button
-                  type="button"
-                  class="btn btn-warning px-2 py-1"
-                  style="border-radius: 0% !important;"
-                >
-                  <span class="btn-text">Shop Now</span>
-                </button></a
-              >Hair Oil</span
-            ><br />
-            <h6 class="text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              dolor consectetur? Animi et molestiae eius iste rem reiciendis
-              consequuntur aspernatur voluptate exercitationem, temporibus harum
-              obcaecati maiores perspiciatis totam quo officia.Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Nam, dolor consectetur?
-              Animi et molestiae eius iste rem reiciendis consequuntur
-              aspernatur voluptate exercitationem, temporibus harum obcaecati
-              maiores perspiciatis totam quo officia.Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Nam, dolor consectetur? Animi et
-              molestiae eius iste rem reiciendis consequuntur aspernatur
-              voluptate exercitationem, temporibus harum obcaecati maiores
-              perspiciatis totam quo officia.
-            </h6>
-          </div>
-        </div>
-        <div class="col-5">
-          <img
-            src="products/oil-front.jpg"
-            class="mr-1"
-            style="width: 100%; height: 350px;"
-          />
-        </div>
-      </div>
-
-      <div id="prod-3"></div>
-      <div
-        class="form-row my-5 position-relative"
-        style="margin-top: 150px !important;"
+        class="form-row my-5"
+        style="margin-top: 150px !important; position: relative; height: 350px;"
       >
         <div class="col-5">
           <img
             src="products/oil-front.jpg"
-            class="mr-1"
-            style="width: 100%; height: 350px;"
+            class="mr-1 img-fluid"
+            style="min-height: 100%;"
           />
         </div>
-        <div class="col-7 prod-3">
-          <h6
-            class="text-dark p-3 text-justify"
-            style="background: rgba(120, 250, 185, 0.7);"
-          >
-            <span class="display-4" style="color: black;"
-              >Hair Oil<a class="btn-heading" href=""
-                ><button
-                  type="button"
-                  class="btn btn-warning px-2 py-1"
-                  style="border-radius: 0% !important;"
-                >
-                  <span class="btn-text">Shop Now</span>
-                </button></a
-              ></span
-            ><br />
+        <div
+          class="col-7 prod-1 p-1"
+          style="
+            background: rgba(223, 105, 177, 0.7);
+            display: table;
+            margin: 0;
+          "
+        >
+          <div class="display-4" style="color: black;">
+            Hair Oil
+          </div>
+          <h6 class="text-dark p-3 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolor
             consectetur? Animi et molestiae eius iste rem reiciendis
             consequuntur aspernatur voluptate exercitationem, temporibus harum
@@ -372,31 +263,116 @@
             exercitationem, temporibus harum obcaecati maiores perspiciatis
             totam quo officia.
           </h6>
+          <a class="btn-heading" href=""
+            ><button
+              type="button"
+              class="btn btn-warning px-2 py-1"
+              style="border-radius: 0% !important;"
+            >
+              <span class="btn-text">Shop Now</span>
+            </button></a
+          >
+        </div>
+      </div>
+
+      <div id="prod-2"></div>
+      <div
+        class="form-row my-5"
+        style="margin-top: 150px !important; position: relative; height: 350px;"
+      >
+        <div
+          class="col-7 prod-2 p-1"
+          style="
+            background: rgba(105, 166, 223, 0.7);
+            display: table;
+            margin: 0;
+          "
+        >
+          <div class="display-4 text-right" style="color: black;">
+            Hair Oil
+          </div>
+          <h6 class="text-dark p-3 text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolor
+            consectetur? Animi et molestiae eius iste rem reiciendis
+            consequuntur aspernatur voluptate exercitationem, temporibus harum
+            obcaecati maiores perspiciatis totam quo officia.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Nam, dolor consectetur? Animi
+            et molestiae eius iste rem reiciendis consequuntur aspernatur
+            voluptate exercitationem, temporibus harum obcaecati maiores
+            perspiciatis totam quo officia.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Nam, dolor consectetur? Animi et
+            molestiae eius iste rem reiciendis consequuntur aspernatur voluptate
+            exercitationem, temporibus harum obcaecati maiores perspiciatis
+            totam quo officia.
+          </h6>
+          <a class="btn-heading-even" href=""
+            ><button
+              type="button"
+              class="btn btn-warning px-2 py-1"
+              style="border-radius: 0% !important;"
+            >
+              <span class="btn-text">Shop Now</span>
+            </button></a
+          >
+        </div>
+        <div class="col-5">
+          <img
+            src="products/oil-front.jpg"
+            class="mr-1 img-fluid"
+            style="min-height: 100%;"
+          />
+        </div>
+      </div>
+
+      <div id="prod-3"></div>
+      <div
+        class="form-row my-5"
+        style="margin-top: 150px !important; position: relative; height: 350px;"
+      >
+        <div class="col-5">
+          <img
+            src="products/oil-front.jpg"
+            class="mr-1 img-fluid"
+            style="min-height: 100%;"
+          />
+        </div>
+        <div
+          class="col-7 prod-3 p-1"
+          style="
+            background: rgba(105, 223, 174, 0.7);
+            display: table;
+            margin: 0;
+          "
+        >
+          <div class="display-4" style="color: black;">
+            Hair Oil
+          </div>
+          <h6 class="text-dark p-3 text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolor
+            consectetur? Animi et molestiae eius iste rem reiciendis
+            consequuntur aspernatur voluptate exercitationem, temporibus harum
+            obcaecati maiores perspiciatis totam quo officia.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Nam, dolor consectetur? Animi
+            et molestiae eius iste rem reiciendis consequuntur aspernatur
+            voluptate exercitationem, temporibus harum obcaecati maiores
+            perspiciatis totam quo officia.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Nam, dolor consectetur? Animi et
+            molestiae eius iste rem reiciendis consequuntur aspernatur voluptate
+            exercitationem, temporibus harum obcaecati maiores perspiciatis
+            totam quo officia.
+          </h6>
+          <a class="btn-heading" href=""
+            ><button
+              type="button"
+              class="btn btn-warning px-2 py-1"
+              style="border-radius: 0% !important;"
+            >
+              <span class="btn-text">Shop Now</span>
+            </button></a
+          >
         </div>
       </div>
     </div>
-
-    <!-- <div
-      class="container mb-5 text-right position-relative"
-      style="margin-top: 200px;"
-    >
-      <div class="card bg-light">
-        <div class="card-body text-left">
-          <p class="contact-text">
-            <i class="fa fa-map-marker mr-3"></i>Delhi, India
-          </p>
-          <p class="contact-text">
-            <i class="fa fa-envelope-o mr-3"></i>something@somewhere.com
-          </p>
-          <p class="contact-text">
-            <i class="fa fa-phone mr-3"></i>+91 9876543210
-          </p>
-        </div>
-      </div>
-      <h5 class="contact-header p-3 bg-dark text-light">
-        CONTACT US
-      </h5>
-    </div> -->
 
     <div id="contact"></div>
     <footer
