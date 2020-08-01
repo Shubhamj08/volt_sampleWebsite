@@ -34,6 +34,16 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <!-- JQuery plugin -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- floating whatsapp -->
+    <link rel="stylesheet" href="floating-wpp.css" />
+    <script type="text/javascript" src="floating-wpp.js"></script>
   </head>
 
   <body>
@@ -59,7 +69,14 @@
             <a class="nav-link text-light" href="#">Home</a>
           </li>
           <li class="nav-item dropdown mr-3">
-            <a class="nav-link text-light" href="#all-products">Products</a>
+            <a class="nav-link text-light" href="#all-products"
+              >Products<span
+                class="caret dropdown-toggle dropdown-toggle-split"
+                data-toggle="dropdown"
+              >
+              </span
+            ></a>
+
             <div class="dropdown-content bg-dark">
               <a href="#prod-1">Product 1</a>
               <a href="#prod-2">Product 2</a>
@@ -600,12 +617,24 @@
       </div>
     </footer>
 
+    <div id="whatsapp"></div>
+    <script type="text/javascript">
+      $(function () {
+        $("#whatsapp").floatingWhatsApp({
+          phone: "+91 9868677119",
+          popupMessage: "Hello, how can we help you?",
+          message: "send us a message",
+          showPopup: true,
+          showOnIE: false,
+          headerTitle: "Volt Welcomes You!",
+          headerColor: "green",
+          backgroundColor: "green",
+          buttonImage: '<img src="icons/whatsapp.png" />',
+        });
+      });
+    </script>
+
     <!--optional JS script tags for bootstrap-->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
