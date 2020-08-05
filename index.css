@@ -89,8 +89,7 @@
 /* container for products section - just to give margins */
 /* container for page footer */
 .container-about,
-.container-products,
-.page-footer {
+.container-products {
   margin-top: 200px;
 }
 
@@ -106,7 +105,7 @@
 .about-text {
   font-size: 20px;
   line-height: 1.2em;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Dosis", sans-serif !important;
 }
 
@@ -167,6 +166,10 @@ div.container-prod-with-text {
   color: #ffffff !important;
 }
 
+.feed-card {
+  box-shadow: 0 0 12px 8px rgba(226, 218, 218, 0.89) !important;
+}
+
 /* Mobile Portrait to Mobile Landscape Size(devices and browsers) */
 @media only screen and (max-width: 479px) {
   .navbar {
@@ -212,7 +215,9 @@ div.container-prod-with-text {
     font-size: 24px !important;
   }
 
+  .about-text,
   p.about-text {
+    font-size: 16px;
     text-align: justify !important;
   }
 
@@ -298,5 +303,11 @@ div.container-prod-with-text {
 
   div.container-products div.container-prod-with-text {
     margin-top: 25px !important;
+  }
+
+  .about-text,
+  p.about-text {
+    font-size: 18px;
+    text-align: justify !important;
   }
 }
